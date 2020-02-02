@@ -1,0 +1,52 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=r00t
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=usr-wordpress
+      - MYSQL_PASSWORD=pwd-wordpress
+  wordpress1:
+    image: wordpress
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: usr-wordpress
+      WORDPRESS_DB_PASSWORD: pwd-wordpress
+    volumes:
+      - ./www/html:/var/www/html
+    depends_on:
+      - mysql
+  wordpress2:
+    image: wordpress
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: usr-wordpress
+      WORDPRESS_DB_PASSWORD: pwd-wordpress
+    volumes:
+      - ./www/html:/var/www/html
+    depends_on:
+      - mysql
+  wordpress3:
+    image: wordpress
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: usr-wordpress
+      WORDPRESS_DB_PASSWORD: pwd-wordpress
+    volumes:
+      - ./www/html:/var/www/html
+    depends_on:
+      - mysql      
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx:ro
+    links:
+      - wordpress1
+      - wordpress2
+      - wordpress3      

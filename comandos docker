@@ -1,0 +1,32 @@
+docker stop projeto2_nginx_1, projeto2_wordpress3_1, projeto2_wordpress1_1, projeto2_wordpress2_1, projeto2_mysql_1
+
+docker exec -it projeto2_nginx_1 ls /
+
+docker stop $(docker ps -a -q)
+
+docker rm wordpress
+
+docker rm $(docker ps -a -q)
+
+docker-compose down --volumes
+
+docker ps -a
+
+docker-compose up -d
+
+
+
+docker run --rm  
+ -e ATTACKED_HOST=http://localhost
+ -e LOCUST_OPTS="-c 10 -r 10" 
+ -v path/to/locust-scripts:/locust 
+ -p 8089:8089
+ grubykarol/locust
+
+
+docker images rmi wordpress, wordpress-db
+docker container rm wordpress, wordpress-db
+docker images 
+docker start/pause/stop
+
+docker run --volume ./locust:/mnt/locust -e LOCUSTFILE_PATH=/mnt/locust/locustfile.py -e TARGET_URL=http://172.17.0.1 -e LOCUST_OPTS="-c 10 -r 10" locustio/locust

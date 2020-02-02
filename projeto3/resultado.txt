@@ -1,0 +1,31 @@
+3 instâncias
+Erro em 21 segundos, com 10 usuários simultâneos
+Erro em x segundos, com 50 usuários simultâneos
+Erro em x segundos, com 100 usuários simultâneos
+Erro em x segundos, com 200 usuários simultâneos
+Erro em x segundos, com 300 usuários simultâneos
+Erro em x segundos, com 400 usuários simultâneos
+Erro em x segundos, com 500 usuários simultâneos
+Erro em x segundos, com 1000 usuários simultâneos
+
+2 instâncias
+Erro em x segundos, com 10 usuários simultâneos
+Erro em x segundos, com 50 usuários simultâneos
+Erro em x segundos, com 100 usuários simultâneos
+Erro em x segundos, com 200 usuários simultâneos
+Erro em x segundos, com 300 usuários simultâneos
+Erro em x segundos, com 400 usuários simultâneos
+Erro em x segundos, com 500 usuários simultâneos
+Erro em x segundos, com 1000 usuários simultâneos
+
+1 instâncias
+Erro em x segundos, com 10 usuários simultâneos
+Erro em x segundos, com 50 usuários simultâneos
+Erro em x segundos, com 100 usuários simultâneos
+Erro em x segundos, com 200 usuários simultâneos
+Erro em x segundos, com 300 usuários simultâneos
+Erro em x segundos, com 400 usuários simultâneos
+Erro em x segundos, com 500 usuários simultâneos
+Erro em x segundos, com 1000 usuários simultâneos
+
+
