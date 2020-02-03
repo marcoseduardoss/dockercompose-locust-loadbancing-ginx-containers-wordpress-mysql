@@ -14,5 +14,5 @@ echo ...parando NgInx!
 docker stop projeto2_nginx_1
 echo ...NgInx PARADO!
 echo Abrir navegador
-timeout /t 5
+timeout /t 5 
 start "localhost" "http://localhost"
