@@ -14,5 +14,5 @@ echo ...iniciando NgInx!
 docker start projeto2_nginx_1
 echo ...NgInx INICIADO!
 echo Abrir navegador
-timeout /t 5
+timeout /t 5 
 start "localhost" "http://localhost"
