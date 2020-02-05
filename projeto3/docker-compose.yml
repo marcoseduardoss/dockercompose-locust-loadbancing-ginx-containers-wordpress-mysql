@@ -4,7 +4,7 @@ services:
     image: locustio/locust
     container_name: my-locust
     environment:      
-      TARGET_URL: http://192.168.56.1
+      TARGET_URL: http://10.22.0.249
       LUCUST_OPTS: "-C 10 -r 10"      
       LOCUSTFILE_PATH: /mnt/locust/locustfile.py
     ports: 

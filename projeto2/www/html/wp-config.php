@@ -18,6 +18,10 @@
  * @package WordPress
  */
 
+define('JWT_AUTH_SECRET_KEY', 'admin');
+define('JWT_AUTH_CORS_ENABLE', true);
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress');
@@ -38,8 +42,7 @@ define( 'DB_CHARSET', 'utf8');
 define( 'DB_COLLATE', '');
 
 
-define('JWT_AUTH_SECRET_KEY', 'admin');
-define('JWT_AUTH_CORS_ENABLE', true);
+
 
 
 /**#@+
